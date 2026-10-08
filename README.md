@@ -121,7 +121,3 @@ Below is a preview of the dashboard created for the Bike Store project:
 
 This project provides actionable insights into the bike shop's performance and offers strategies to enhance revenue and profitability. The interactive dashboard allows stakeholders to explore data trends and make data-driven decisions effectively.
 
-
-## Authors
-[![Owais Farooqui](https://img.shields.io/badge/Owais_Farooqui-0A2540?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Strik3r10)
-[![Connect](https://img.shields.io/badge/Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/owais-farooqui-942281256/)
