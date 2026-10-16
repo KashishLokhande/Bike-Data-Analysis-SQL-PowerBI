@@ -15,7 +15,7 @@ SELECT
     price, 
     COGS,
     (riders * price) AS revenue,
-    (riders * price - COGS) AS profit
+    (riders * (price - COGS)) AS profit
 FROM cte AS a
 LEFT JOIN cost_table AS b 
 ON a.yr = b.yr;
