@@ -12,9 +12,9 @@ The analysis covered two years of data from the `bike_share_yr_0` and `bike_shar
 
 Below is a preview of the dashboard created for the Bike Store project:
 
-![Dashboard Preview](file:///C:/Users/HOME/Downloads/BIKE%20SALES%20PROJECT/Bike-Data-Analysis-SQl-PowerBI--main/Bike-Data-Analysis-SQl-PowerBI--main/Image%201%20.png)
+![Dashboard Page 1](Dashboard1.png)
 
-![Dashboard Preview](file:///C:/Users/HOME/Downloads/BIKE%20SALES%20PROJECT/Bike-Data-Analysis-SQl-PowerBI--main/Bike-Data-Analysis-SQl-PowerBI--main/Image%202.png)
+![Dashboard Page 2](Dashboard2.png)
 
 ## Tools and Technologies
 
