@@ -42,7 +42,7 @@ Below is a preview of the dashboard created for the Bike Store project:
    SELECT 
        dteday, season, a.yr, weekday, hr, rider_type, riders, price, COGS,
        riders * price AS revenue,
-       (riders * price) - COGS AS profit
+       (riders * price) - (riders*COGS) AS profit
    FROM cte AS a
    LEFT JOIN cost_table AS b 
    ON a.yr = b.yr;
@@ -57,28 +57,30 @@ Below is a preview of the dashboard created for the Bike Store project:
      - **Revenue and Profit Over Time:** A bar and line chart showing trends over two years.
      - **Revenue by Season:** Bar chart visualizing revenue per season.
      - **Riders Demographics:** A donut chart showing the proportion of casual vs. registered users.
-     - **Profitability by Hour:** A heatmap showing revenue across different hours and days of the week.
+     - **Revenue by Hour:** A heatmap showing revenue across different hours and days of the week.
 
 ---
 
 ## Key Findings
 
 1. **When Are We Making Money?**
-   - Peak earnings occur during early evening hours, specifically between 5:00 PM and 7:00 PM, with total peak-hour revenue of $1.55M.
-   - Peak-hour revenue is approximately 23% higher than average hourly revenue.
+   - Peak earnings occur during early evening hours, specifically between 5:00 PM and 7:00 PM, with combined revenue of $2.98M ($1.55M in the 5 PM hour and $1.43M in the 6 PM hour).
+   - Each peak hour earns about $1.49M, roughly 2.4× the average hour ($0.63M).
 
 2. **Revenue by Season:**
    - Season 3 generated the highest revenue (~$4.9M), followed by Season 2 (~$4.2M).
 
 3. **Rider Demographics:**
    - Registered users contribute ~81.26% of total revenue.
-   - Registered riders generate ~4× more profit per trip than casual riders.
+   - Registered riders generate ~4.3× more total profit than casual riders ($8.49M vs $1.96M), but profit per ride is almost identical ($3.18 vs $3.16). The gap comes from volume, not margin.
 
 4. **KPI Summary:**
-   - Total Riders: 3 Million
-   - Total Revenue: $15 Million
-   - Total Profit: $15.14 Million
+   - Total Riders: 3.29 Million
+   - Total Revenue: $15.19 Million
+   - Total Profit: $10.45 Million (~69% margin)
+   - Profit by year: $3.42M in year 0 and $7.03M in year 1.
 
+3. Section "Recommendations"
 ---
 
 ## Recommendations
@@ -98,8 +100,7 @@ Below is a preview of the dashboard created for the Bike Store project:
 
 4. **Focus on Peak Hours:**
    - Optimize staffing, inventory, and marketing spend during peak revenue hours (5:00 PM to 7:00 PM).
-   - Monetize high-demand hours through dynamic pricing, with expected uplift of $1.5M–$2.5M annually.
-
+   - Monetize high-demand hours through dynamic pricing, as a way to raise revenue in the busiest hours.
 ---
 
 ## Files in the Repository
